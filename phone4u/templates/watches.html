@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+watches
+{% endblock  %}
+
+{% block content %}
+<div class="m-4 text-center">
+    <h1>WATCHES</h1> 
+</div>
+  <hr>
+
+<div class="row watch_row">
+
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 p-4 text-center"> 
+    <ul class="list-group list-group m-4 ">
+      {% for i in watches %}
+      <li class="list-group-item p-4"><b>{{i.w_name}}</b></li>
+      <li class="list-group-item"><img src={{i.w_image.url}} alt="..."></li>
+      <li class="list-group-item">{{i.w_description}}</li>
+      <li class="list-group-item"><button class="btn btn-primary mt-2 mb-4">Add to cart</button></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-lg-3"></div>
+
+</div>
+
+{% endblock  %}

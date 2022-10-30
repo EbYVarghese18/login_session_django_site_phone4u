@@ -1,0 +1,53 @@
+
+/* navbar */
+.navbar{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.navbar img{
+    height: 45px;
+}
+.navbar .container{
+    justify-content: space-between !important;
+}
+.navbar-collapse{
+    flex-direction: row-reverse;
+}
+/* cards */
+.cards_custom{
+    justify-content: space-evenly;
+    align-items: center !important;
+    display: flex;
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}
+.card{
+    width: 20rem !important;
+    align-items: center;
+}
+.card img{
+    width: 200px;
+}
+
+/* homepage */
+
+.home_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    color: aliceblue;
+    background: #212529;
+}
+.home_content p{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* watches */
+
+.watch_row{
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}

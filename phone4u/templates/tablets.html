@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+tablets
+{% endblock  %}
+
+{% block content %}
+<div class="m-4 text-center">
+    <h1>TABLETS</h1> 
+</div>
+  <hr>
+  <!-- table starts -->
+<div class="m-4">
+  <table class="table table-striped table-bordered table-hover text-center align-middle">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in tablets %}
+      <tr>
+        <td><img src={{i.t_image.url}} alt="..."></td>
+        <td>{{i.t_name}}</td>
+        <td>{{i.t_description}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock  %}
